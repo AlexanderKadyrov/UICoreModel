@@ -5,22 +5,23 @@ import PackageDescription
 
 let package = Package(
     name: "UICoreModel",
+    platforms: [
+        .macOS(.v13),
+        .iOS("17")
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "UICoreModel",
             targets: ["UICoreModel"]
-        ),
+        )
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "UICoreModel"
         ),
         .testTarget(
             name: "UICoreModelTests",
             dependencies: ["UICoreModel"]
-        ),
+        )
     ]
 )
