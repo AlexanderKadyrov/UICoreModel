@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ConfigurationEdgeInsetsValue: Codable, Hashable {
+public struct ConfigurationEdgeInsetsValue: Codable, Hashable, Sendable {
     
     public let top: ConfigurationFloat
     public let leading: ConfigurationFloat

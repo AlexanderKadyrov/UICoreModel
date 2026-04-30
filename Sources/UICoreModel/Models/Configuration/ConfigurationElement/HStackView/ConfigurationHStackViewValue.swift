@@ -1,8 +1,8 @@
 import Foundation
 
-public struct ConfigurationHStackViewValue: Codable, Hashable {
+public struct ConfigurationHStackViewValue: Codable, Hashable, Sendable {
     
-    public enum VerticalAlignment: String, Codable {
+    public enum VerticalAlignment: String, Codable, Sendable {
         case top
         case center
         case bottom

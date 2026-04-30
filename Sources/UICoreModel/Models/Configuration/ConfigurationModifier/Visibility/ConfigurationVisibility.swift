@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationVisibility: Codable, Hashable {
+public enum ConfigurationVisibility: Codable, Hashable, Sendable {
     
     case value(ConfigurationVisibilityValue)
     

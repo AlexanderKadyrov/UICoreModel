@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ConfigurationFrameValue: Codable, Hashable {
+public struct ConfigurationFrameValue: Codable, Hashable, Sendable {
     
     public let minWidth: ConfigurationFloat?
     public let idealWidth: ConfigurationFloat?

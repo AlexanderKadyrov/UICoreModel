@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationFont: Codable, Hashable {
+public enum ConfigurationFont: Codable, Hashable, Sendable {
     
     case value(ConfigurationFontValue)
     

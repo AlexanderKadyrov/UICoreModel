@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationModifier: Codable, Hashable {
+public enum ConfigurationModifier: Codable, Hashable, Sendable {
     
     case listRowSeparator(ConfigurationVisibility)
     case foregroundStyle(ConfigurationBackground)

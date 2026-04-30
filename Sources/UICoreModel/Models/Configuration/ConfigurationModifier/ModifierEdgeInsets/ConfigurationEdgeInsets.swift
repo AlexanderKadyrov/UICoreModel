@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationEdgeInsets: Codable, Hashable {
+public enum ConfigurationEdgeInsets: Codable, Hashable, Sendable {
     
     case value(ConfigurationEdgeInsetsValue)
     case zero

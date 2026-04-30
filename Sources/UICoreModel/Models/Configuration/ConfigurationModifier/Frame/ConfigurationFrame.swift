@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationFrame: Codable, Hashable {
+public enum ConfigurationFrame: Codable, Hashable, Sendable {
     
     case value(ConfigurationFrameValue)
     

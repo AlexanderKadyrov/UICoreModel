@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationFloat: Codable, Hashable {
+public enum ConfigurationFloat: Codable, Hashable, Sendable {
     
     case value(CGFloat)
     case infinity

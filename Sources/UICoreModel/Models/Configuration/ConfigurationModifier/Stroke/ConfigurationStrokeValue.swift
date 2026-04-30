@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ConfigurationStrokeValue: Codable, Hashable {
+public struct ConfigurationStrokeValue: Codable, Hashable, Sendable {
     
     public let cornerRadius: ConfigurationFloat
     public let lineWidth: ConfigurationFloat

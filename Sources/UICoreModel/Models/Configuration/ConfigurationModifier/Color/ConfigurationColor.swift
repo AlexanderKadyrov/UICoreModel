@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationColor: Codable, Hashable {
+public enum ConfigurationColor: Codable, Hashable, Sendable {
     
     case hex(String)
     

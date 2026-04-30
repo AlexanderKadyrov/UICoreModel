@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ConfigurationTabItemValue: Codable, Hashable {
+public struct ConfigurationTabItemValue: Codable, Hashable, Sendable {
     
     public let name: String
     public let systemImage: String

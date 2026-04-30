@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationVStackView: Codable, Hashable {
+public enum ConfigurationVStackView: Codable, Hashable, Sendable {
     
     case value(ConfigurationVStackViewValue)
     

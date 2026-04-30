@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationAlignment: String, Codable, Hashable {
+public enum ConfigurationAlignment: String, Codable, Hashable, Sendable {
     case bottom
     case bottomLeading
     case bottomTrailing
