@@ -1,6 +1,7 @@
 import Foundation
 
-public enum ConfigurationModifier: Hashable {
+public enum ConfigurationModifier: Codable, Hashable {
+    
     case listRowSeparator(ConfigurationVisibility)
     case foregroundStyle(ConfigurationBackground)
     case listRowInsets(ConfigurationPadding)
@@ -14,9 +15,6 @@ public enum ConfigurationModifier: Hashable {
     case frame(ConfigurationFrame)
     case font(ConfigurationFont)
     case tabItem(ConfigurationTabItem)
-}
-
-extension ConfigurationModifier: Codable {
     
     enum CodingKeys: CodingKey {
         case type

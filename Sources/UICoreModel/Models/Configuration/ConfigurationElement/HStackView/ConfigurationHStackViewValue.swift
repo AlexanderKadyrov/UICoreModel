@@ -12,4 +12,9 @@ public struct ConfigurationHStackViewValue: Codable, Hashable {
     
     public let alignment: VerticalAlignment?
     public let spacing: ConfigurationFloat?
+    
+    public init(alignment: VerticalAlignment?, spacing: ConfigurationFloat?) {
+        self.alignment = alignment
+        self.spacing = spacing
+    }
 }
