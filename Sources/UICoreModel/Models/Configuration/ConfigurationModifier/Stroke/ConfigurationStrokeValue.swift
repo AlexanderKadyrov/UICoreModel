@@ -1,7 +1,7 @@
 import Foundation
 
-struct ConfigurationStrokeValue: Codable, Hashable {
-    let cornerRadius: ConfigurationFloat
-    let lineWidth: ConfigurationFloat
-    let color: ConfigurationColor
+public struct ConfigurationStrokeValue: Codable, Hashable {
+    public let cornerRadius: ConfigurationFloat
+    public let lineWidth: ConfigurationFloat
+    public let color: ConfigurationColor
 }

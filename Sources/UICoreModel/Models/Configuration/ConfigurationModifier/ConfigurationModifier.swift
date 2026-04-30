@@ -1,6 +1,6 @@
 import Foundation
 
-enum ConfigurationModifier: Hashable {
+public enum ConfigurationModifier: Hashable {
     case listRowSeparator(ConfigurationVisibility)
     case foregroundStyle(ConfigurationBackground)
     case listRowInsets(ConfigurationPadding)
@@ -39,7 +39,7 @@ extension ConfigurationModifier: Codable {
         case badType
     }
     
-    init(from decoder: any Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let type = try container.decode(String.self, forKey: .type)
         switch type {
@@ -87,7 +87,7 @@ extension ConfigurationModifier: Codable {
         }
     }
     
-    func encode(to encoder: any Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         switch self {
         case .listRowSeparator(let model):

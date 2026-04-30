@@ -1,6 +1,6 @@
 import Foundation
 
-enum ConfigurationListStyleValue: String, Codable, Hashable {
+public enum ConfigurationListStyleValue: String, Codable, Hashable {
     case automatic
     case grouped
     case inset

@@ -1,13 +1,13 @@
 import Foundation
 
-struct ConfigurationVStackViewValue: Codable, Hashable {
+public struct ConfigurationVStackViewValue: Codable, Hashable {
     
-    enum HorizontalAlignment: String, Codable {
+    public enum HorizontalAlignment: String, Codable {
         case leading
         case center
         case trailing
     }
     
-    var alignment: HorizontalAlignment?
-    var spacing: ConfigurationFloat?
+    public let alignment: HorizontalAlignment?
+    public let spacing: ConfigurationFloat?
 }

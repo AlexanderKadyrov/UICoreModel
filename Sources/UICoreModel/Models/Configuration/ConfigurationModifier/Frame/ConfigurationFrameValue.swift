@@ -1,11 +1,11 @@
 import Foundation
 
-struct ConfigurationFrameValue: Codable, Hashable {
-    let minWidth: ConfigurationFloat?
-    let idealWidth: ConfigurationFloat?
-    let maxWidth: ConfigurationFloat?
-    let minHeight: ConfigurationFloat?
-    let idealHeight: ConfigurationFloat?
-    let maxHeight: ConfigurationFloat?
-    let alignment: ConfigurationAlignment?
+public struct ConfigurationFrameValue: Codable, Hashable {
+    public let minWidth: ConfigurationFloat?
+    public let idealWidth: ConfigurationFloat?
+    public let maxWidth: ConfigurationFloat?
+    public let minHeight: ConfigurationFloat?
+    public let idealHeight: ConfigurationFloat?
+    public let maxHeight: ConfigurationFloat?
+    public let alignment: ConfigurationAlignment?
 }
