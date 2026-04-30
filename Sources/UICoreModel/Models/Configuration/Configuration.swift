@@ -1,6 +1,6 @@
 import Foundation
 
-public enum Configuration: Codable, Hashable {
+public enum Configuration: Codable, Hashable, Sendable {
     
     case modifier(ConfigurationModifier)
     case element(ConfigurationElement)

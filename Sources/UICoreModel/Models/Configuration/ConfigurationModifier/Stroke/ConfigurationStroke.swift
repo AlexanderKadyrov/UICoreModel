@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationStroke: Codable, Hashable {
+public enum ConfigurationStroke: Codable, Hashable, Sendable {
     
     case value(ConfigurationStrokeValue)
     

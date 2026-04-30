@@ -1,11 +1,9 @@
 import Foundation
 
-public enum ConfigurationElement: Hashable {
+public enum ConfigurationElement: Codable, Hashable, Sendable {
+    
     case vStackView(ConfigurationVStackView)
     case hStackView(ConfigurationHStackView)
-}
-
-extension ConfigurationElement: Codable {
     
     enum CodingKeys: CodingKey {
         case type

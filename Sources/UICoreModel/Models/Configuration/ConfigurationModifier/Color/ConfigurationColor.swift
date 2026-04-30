@@ -1,6 +1,8 @@
 import Foundation
 
-public enum ConfigurationColor: Codable, Hashable {
+public enum ConfigurationColor: Codable, Hashable, Sendable {
+    
+    case hex(String)
     
     enum CodingKeys: CodingKey {
         case type
@@ -10,8 +12,6 @@ public enum ConfigurationColor: Codable, Hashable {
     enum Errors: Error {
         case badType
     }
-    
-    case hex(String)
     
     public init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationTabItem: Codable, Hashable {
+public enum ConfigurationTabItem: Codable, Hashable, Sendable {
     
     case value(ConfigurationTabItemValue)
     

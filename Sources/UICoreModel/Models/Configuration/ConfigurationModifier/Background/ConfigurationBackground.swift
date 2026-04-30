@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationBackground: Codable, Hashable {
+public enum ConfigurationBackground: Codable, Hashable, Sendable {
     
     case color(ConfigurationColor)
     

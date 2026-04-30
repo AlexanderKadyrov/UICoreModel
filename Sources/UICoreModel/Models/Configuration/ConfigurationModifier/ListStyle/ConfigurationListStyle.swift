@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationListStyle: Codable, Hashable {
+public enum ConfigurationListStyle: Codable, Hashable, Sendable {
     
     case value(ConfigurationListStyleValue)
     

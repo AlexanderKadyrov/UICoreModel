@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ConfigurationPadding: Codable, Hashable {
+public enum ConfigurationPadding: Codable, Hashable, Sendable {
     
     case edgeInsets(ConfigurationEdgeInsets)
     
