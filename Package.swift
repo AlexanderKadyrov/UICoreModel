@@ -6,6 +6,7 @@ import PackageDescription
 let package = Package(
     name: "UICoreModel",
     platforms: [
+        .macOS(.v13),
         .iOS("17")
     ],
     products: [
