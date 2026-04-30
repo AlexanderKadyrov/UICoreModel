@@ -1,6 +1,6 @@
 import Foundation
 
-enum Configuration: Codable, Hashable {
+public enum Configuration: Codable, Hashable {
     
     case modifier(ConfigurationModifier)
     case element(ConfigurationElement)
@@ -15,7 +15,7 @@ enum Configuration: Codable, Hashable {
         case badType
     }
     
-    init(from decoder: any Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let type = try container.decode(String.self, forKey: .type)
         switch type {
@@ -30,7 +30,7 @@ enum Configuration: Codable, Hashable {
         }
     }
     
-    func encode(to encoder: any Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         switch self {
         case .modifier(let model):

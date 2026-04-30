@@ -1,8 +1,8 @@
 import Foundation
 
-struct ConfigurationEdgeInsetsValue: Codable, Hashable {
-    let top: ConfigurationFloat
-    let leading: ConfigurationFloat
-    let bottom: ConfigurationFloat
-    let trailing: ConfigurationFloat
+public struct ConfigurationEdgeInsetsValue: Codable, Hashable {
+    public let top: ConfigurationFloat
+    public let leading: ConfigurationFloat
+    public let bottom: ConfigurationFloat
+    public let trailing: ConfigurationFloat
 }

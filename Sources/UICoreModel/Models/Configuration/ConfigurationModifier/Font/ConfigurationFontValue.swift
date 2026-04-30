@@ -1,6 +1,6 @@
 import Foundation
 
-struct ConfigurationFontValue: Codable, Hashable {
-    let name: String
-    let size: ConfigurationFloat
+public struct ConfigurationFontValue: Codable, Hashable {
+    public let name: String
+    public let size: ConfigurationFloat
 }

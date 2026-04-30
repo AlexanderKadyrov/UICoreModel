@@ -1,6 +1,6 @@
 import Foundation
 
-enum ConfigurationElement: Hashable {
+public enum ConfigurationElement: Hashable {
     case vStackView(ConfigurationVStackView)
     case hStackView(ConfigurationHStackView)
 }
@@ -17,7 +17,7 @@ extension ConfigurationElement: Codable {
         case badType
     }
     
-    init(from decoder: any Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let type = try container.decode(String.self, forKey: .type)
         switch type {
@@ -32,7 +32,7 @@ extension ConfigurationElement: Codable {
         }
     }
     
-    func encode(to encoder: any Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         switch self {
         case .vStackView(let model):

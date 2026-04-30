@@ -1,8 +1,8 @@
 import Foundation
 
-struct ConfigurationHStackViewValue: Codable, Hashable {
+public struct ConfigurationHStackViewValue: Codable, Hashable {
     
-    enum VerticalAlignment: String, Codable {
+    public enum VerticalAlignment: String, Codable {
         case top
         case center
         case bottom
@@ -10,6 +10,6 @@ struct ConfigurationHStackViewValue: Codable, Hashable {
         case lastTextBaseline
     }
     
-    var alignment: VerticalAlignment?
-    var spacing: ConfigurationFloat?
+    public let alignment: VerticalAlignment?
+    public let spacing: ConfigurationFloat?
 }
