@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ModifierNameDTO: String, Codable, Hashable, Sendable {
+public enum ModifierNameDTO: String, Codable, Hashable {
     case listRowSeparator
     case foregroundStyle
     case listRowSpacing
