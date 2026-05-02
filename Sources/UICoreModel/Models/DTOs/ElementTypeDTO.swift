@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ElementTypeDTO: Codable, Hashable, Sendable {
+public struct ElementTypeDTO: Codable, Hashable {
     
     public let id: Int?
     public let name: ElementNameDTO

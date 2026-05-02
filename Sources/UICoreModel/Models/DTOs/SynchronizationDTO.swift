@@ -1,6 +1,6 @@
 import Foundation
 
-public struct SynchronizationDTO: Codable, Hashable, Sendable {
+public struct SynchronizationDTO: Codable, Hashable {
     
     public let elementTypes: [ElementTypeDTO]
     public let modifierTypes: [ModifierTypeDTO]

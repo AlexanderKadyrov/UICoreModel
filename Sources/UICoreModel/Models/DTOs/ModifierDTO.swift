@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ModifierDTO: Codable, Hashable, Sendable {
+public struct ModifierDTO: Codable, Hashable {
     
     public let id: Int?
     public let modifierTypeId: Int?
