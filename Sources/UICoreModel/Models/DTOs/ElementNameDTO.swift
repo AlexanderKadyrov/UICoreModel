@@ -1,11 +1,11 @@
 import Foundation
 
 public enum ElementNameDTO: String, Codable, Hashable {
-    case asyncImageView
-    case vStackView
-    case hStackView
-    case zStackView
-    case tabBarView
-    case textView
-    case listView
+    case asyncImageElement
+    case vStackElement
+    case hStackElement
+    case zStackElement
+    case tabBarElement
+    case textElement
+    case listElement
 }
