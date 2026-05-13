@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ViewDTO: Codable, Hashable {
+public struct TemplateDTO: Codable, Hashable {
     
     public let id: Int?
     
