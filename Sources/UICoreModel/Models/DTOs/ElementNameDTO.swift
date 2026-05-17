@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ElementNameDTO: String, Codable, Hashable {
+public enum ElementNameDTO: String, Codable, Hashable, Sendable {
     case asyncImageElement
     case vStackElement
     case hStackElement
