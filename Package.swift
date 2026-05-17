@@ -7,7 +7,7 @@ let package = Package(
     name: "UICoreModel",
     platforms: [
         .macOS(.v13),
-        .iOS("17")
+        .iOS(.v16)
     ],
     products: [
         .library(
