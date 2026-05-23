@@ -8,13 +8,23 @@ public struct SynchronizationDTO: Codable, Hashable {
     public let modifierTypes: [ModifierTypeDTO]
     public let elements: [ElementDTO]
     public let modifiers: [ModifierDTO]
+    public let views: [ViewDTO]
     
-    public init(contents: [ContentDTO], templates: [TemplateDTO], elementTypes: [ElementTypeDTO], modifierTypes: [ModifierTypeDTO], elements: [ElementDTO], modifiers: [ModifierDTO]) {
+    public init(
+        contents: [ContentDTO],
+        templates: [TemplateDTO],
+        elementTypes: [ElementTypeDTO],
+        modifierTypes: [ModifierTypeDTO],
+        elements: [ElementDTO],
+        modifiers: [ModifierDTO],
+        views: [ViewDTO]
+    ) {
         self.contents = contents
         self.templates = templates
         self.elementTypes = elementTypes
         self.modifierTypes = modifierTypes
         self.elements = elements
         self.modifiers = modifiers
+        self.views = views
     }
 }
