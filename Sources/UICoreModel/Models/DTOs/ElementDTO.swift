@@ -4,7 +4,7 @@ public struct ElementDTO: Codable, Hashable {
     
     public let id: Int?
     public let elementTypeId: Int?
-    public let elementId: Int?
+    public let parentId: Int?
     public let contentId: Int?
     public let templateId: Int?
     
@@ -14,10 +14,10 @@ public struct ElementDTO: Codable, Hashable {
     public let updatedAt: Date?
     public let deletedAt: Date?
     
-    public init(id: Int?, elementTypeId: Int?, elementId: Int?, contentId: Int?, templateId: Int?, configuration: Configuration?, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
+    public init(id: Int?, elementTypeId: Int?, parentId: Int?, contentId: Int?, templateId: Int?, configuration: Configuration?, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
         self.id = id
         self.elementTypeId = elementTypeId
-        self.elementId = elementId
+        self.parentId = parentId
         self.contentId = contentId
         self.templateId = templateId
         self.configuration = configuration
