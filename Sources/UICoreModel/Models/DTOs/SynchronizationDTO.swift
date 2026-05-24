@@ -3,28 +3,28 @@ import Foundation
 public struct SynchronizationDTO: Codable, Hashable {
     
     public let contents: [ContentDTO]
-    public let templates: [TemplateDTO]
+    public let components: [ComponentDTO]
     public let elementTypes: [ElementTypeDTO]
     public let modifierTypes: [ModifierTypeDTO]
     public let elements: [ElementDTO]
     public let modifiers: [ModifierDTO]
-    public let views: [ViewDTO]
+    public let visuals: [VisualDTO]
     
     public init(
         contents: [ContentDTO],
-        templates: [TemplateDTO],
+        components: [ComponentDTO],
         elementTypes: [ElementTypeDTO],
         modifierTypes: [ModifierTypeDTO],
         elements: [ElementDTO],
         modifiers: [ModifierDTO],
-        views: [ViewDTO]
+        visuals: [VisualDTO]
     ) {
         self.contents = contents
-        self.templates = templates
+        self.components = components
         self.elementTypes = elementTypes
         self.modifierTypes = modifierTypes
         self.elements = elements
         self.modifiers = modifiers
-        self.views = views
+        self.visuals = visuals
     }
 }
