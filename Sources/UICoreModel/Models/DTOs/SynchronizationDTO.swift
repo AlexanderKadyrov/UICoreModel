@@ -8,7 +8,7 @@ public struct SynchronizationDTO: Codable, Hashable {
     public let modifierTypes: [ModifierTypeDTO]
     public let elements: [ElementDTO]
     public let modifiers: [ModifierDTO]
-    public let views: [ViewDTO]
+    public let visuals: [VisualDTO]
     
     public init(
         contents: [ContentDTO],
@@ -17,7 +17,7 @@ public struct SynchronizationDTO: Codable, Hashable {
         modifierTypes: [ModifierTypeDTO],
         elements: [ElementDTO],
         modifiers: [ModifierDTO],
-        views: [ViewDTO]
+        visuals: [VisualDTO]
     ) {
         self.contents = contents
         self.components = components
@@ -25,6 +25,6 @@ public struct SynchronizationDTO: Codable, Hashable {
         self.modifierTypes = modifierTypes
         self.elements = elements
         self.modifiers = modifiers
-        self.views = views
+        self.visuals = visuals
     }
 }
