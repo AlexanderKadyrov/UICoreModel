@@ -2,15 +2,15 @@ import Foundation
 
 public struct VisualDTO: Codable, Hashable {
     
-    public let id: Int?
-    public let parentId: Int?
-    public let componentId: Int?
+    public let id: UUID?
+    public let parentId: UUID?
+    public let componentId: UUID?
     
     public let createdAt: Date?
     public let updatedAt: Date?
     public let deletedAt: Date?
     
-    public init(id: Int?, parentId: Int?, componentId: Int?, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
+    public init(id: UUID?, parentId: UUID?, componentId: UUID?, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
         self.id = id
         self.parentId = parentId
         self.componentId = componentId

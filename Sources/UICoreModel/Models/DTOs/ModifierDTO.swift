@@ -2,16 +2,16 @@ import Foundation
 
 public struct ModifierDTO: Codable, Hashable {
     
-    public let id: Int?
-    public let modifierTypeId: Int?
-    public let elementId: Int?
+    public let id: UUID?
+    public let modifierTypeId: UUID?
+    public let elementId: UUID?
     public let configuration: Configuration
     
     public let createdAt: Date?
     public let updatedAt: Date?
     public let deletedAt: Date?
     
-    public init(id: Int?, modifierTypeId: Int?, elementId: Int?, configuration: Configuration, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
+    public init(id: UUID?, modifierTypeId: UUID?, elementId: UUID?, configuration: Configuration, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
         self.id = id
         self.modifierTypeId = modifierTypeId
         self.elementId = elementId

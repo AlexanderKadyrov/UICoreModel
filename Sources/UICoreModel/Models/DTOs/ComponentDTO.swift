@@ -2,7 +2,7 @@ import Foundation
 
 public struct ComponentDTO: Codable, Hashable {
     
-    public let id: Int?
+    public let id: UUID?
     
     public let name: String
     
@@ -10,7 +10,7 @@ public struct ComponentDTO: Codable, Hashable {
     public let updatedAt: Date?
     public let deletedAt: Date?
     
-    public init(id: Int?, name: String, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
+    public init(id: UUID?, name: String, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
         self.id = id
         self.name = name
         self.createdAt = createdAt
