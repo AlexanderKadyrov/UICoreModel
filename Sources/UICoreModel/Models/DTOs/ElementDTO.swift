@@ -2,11 +2,11 @@ import Foundation
 
 public struct ElementDTO: Codable, Hashable {
     
-    public let id: Int?
-    public let elementTypeId: Int?
-    public let parentId: Int?
-    public let contentId: Int?
-    public let componentId: Int?
+    public let id: UUID?
+    public let elementTypeId: UUID?
+    public let parentId: UUID?
+    public let contentId: UUID?
+    public let componentId: UUID?
     
     public let configuration: Configuration?
     
@@ -14,7 +14,7 @@ public struct ElementDTO: Codable, Hashable {
     public let updatedAt: Date?
     public let deletedAt: Date?
     
-    public init(id: Int?, elementTypeId: Int?, parentId: Int?, contentId: Int?, componentId: Int?, configuration: Configuration?, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
+    public init(id: UUID?, elementTypeId: UUID?, parentId: UUID?, contentId: UUID?, componentId: UUID?, configuration: Configuration?, createdAt: Date?, updatedAt: Date?, deletedAt: Date?) {
         self.id = id
         self.elementTypeId = elementTypeId
         self.parentId = parentId
